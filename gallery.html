@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+<script>
+function over(e1,e2)
+{
+	document.getElementById(""+e1+"").style.backgroundImage="url("+e2+")";
+	
+}
+function changpic(e1,e2)
+{
+	
+	document.getElementById(""+e1+"").innerHTML="<img src="+e2+" width='590' height='440'>";
+	
+}
+var x=0;
+function nextprev(e)
+{
+	
+	e=e*(2-2)+1;
+	x=((x+e)%2);
+	var y=x*(-620);
+
+	document.getElementById("pic-slider").style.left=y+"px";
+}
+</script>
+<style type="text/css">
+#galery {
+	border: 1px solid #272423;
+	overflow: hidden;
+	position: absolute;
+	height: 723px;
+	width: 660px;
+	left: 285px;
+	top: 27px;
+	background-image: url(images/page_bg.png);
+	background-repeat: repeat;
+}
+.header {
+	background-color: transparent;
+	position: relative;
+	height: 50px;
+	width: 635px;
+	padding-left: 25px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	color: #685D59;
+	text-align: left;
+	padding-top: 30px;
+	font-weight: 100;
+	font-style: normal;
+}
+#pic-show {
+	height: 440px;
+	width: 590px;
+	margin-right: 35px;
+	margin-left: 25px;
+	border: 5px solid #393330;
+	position: relative;
+	margin-bottom: 16px;
+}
+#pic-railway {
+	height: 105px;
+	width: 600px;
+	margin-right: 35px;
+	margin-left: 25px;
+	position: relative;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+#pic-slider {
+	position: absolute;
+	height: 105px;
+	width: 1240px;
+	z-index: 3;
+}
+.fixer {
+	clear: both;
+}
+.pic-boxe {
+	height: 105px;
+	width: 135px;
+	margin-right: 20px;
+
+	position: relative;
+	float: left;
+}
+#btn-layout {
+	height: 36px;
+	width: 600px;
+	margin-right: 35px;
+	margin-left: 25px;
+	position: relative;
+}
+.prev {
+	background-image: url(images/prev-btn.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 36px;
+	width: 53px;
+	position: relative;
+	cursor: pointer;
+	cursor: hand;
+}
+.next {
+	background-image: url(images/next-btn.png);
+	background-repeat: no-repeat;
+	float: right;
+	height: 36px;
+	width: 54px;
+	position: relative;
+	cursor:pointer;
+	cursor:hand;
+}
+h2 {
+	margin: 0px;
+	font-weight: 100;
+}
+a {
+	margin: 0px;
+	cursor:pointer;
+	cursor:hand;
+}
+a img{
+		border: 5px solid #393330;
+}
+a img:hover{
+		border: 5px solid #fff;
+}
+</style>
+</head>
+
+<body>
+
+<div id="galery">
+  <div class="header"><h2>MY GALLERY</h2></div>
+  <div id="pic-show"><img src="images/slide1.jpg" width="590" height="440"></div>
+  <div id="pic-railway">
+  <div id="pic-slider" style="left:0px;">
+    <div class="pic-boxe"><a onClick="changpic('pic-show','images/slide1.jpg')"><img src="images/btn-slide1.jpg" width="125" height="95" /></a></div>
+        <div class="pic-boxe"><a onClick="changpic('pic-show','images/slide2.jpg')"><img src="images/btn-slide2.jpg" width="125" height="95" /></a></div>
+       <div class="pic-boxe"><a onClick="changpic('pic-show','images/slide3.jpg')"><img src="images/btn-slide3.jpg" width="125" height="95" /></a></div>
+  <div class="pic-boxe"><a onClick="changpic('pic-show','images/slide4.jpg')"><img src="images/btn-slide4.jpg" width="125" height="95" /></a></div>
+      <div class="pic-boxe"><a onClick="changpic('pic-show','images/slide5.jpg')"><img src="images/btn-slide5.jpg" width="125" height="95" /></a></div>
+      <div class="pic-boxe"><a onClick="changpic('pic-show','images/slide6.jpg')"><img src="images/btn-slide6.jpg" width="125" height="95" /></a></div>
+      <div class="pic-boxe"><a onClick="changpic('pic-show','images/slide7.jpg')"><img src="images/btn-slide7.jpg" width="125" height="95" /></a></div>
+  <div class="pic-boxe"><a onClick="changpic('pic-show','images/slide8.jpg')"><img src="images/btn-slide8.jpg" width="125" height="95" /></a></div>
+  
+  <div class="fixer"></div>
+  </div>
+  </div>
+  <div id="btn-layout">
+    <div class="prev" id="prv" onMouseOver="over(this.id,'images/prev-hover-btn.png')" onMouseOut="over(this.id,'images/prev-btn.png')" onClick="nextprev(1)" ></div>
+    <div class="next" id="nxt" onMouseOver="over(this.id,'images/next-hover-btn.png')" onMouseOut="over(this.id,'images/next-btn.png')" onClick="nextprev(0)"></div>
+  </div>
+</div>
+
+
+</body>
+</html>

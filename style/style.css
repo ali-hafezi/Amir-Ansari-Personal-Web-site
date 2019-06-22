@@ -1,0 +1,145 @@
+@charset "utf-8";
+body {
+	background-color: transparent;
+	background-image: url(../images/bg_pic1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#mainlayout {
+	background-color: transparent;
+	width: 983px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+#titlelayout {
+	background-color: transparent;
+	float: left;
+	height: 535px;
+	width: 303px;
+	position: relative;
+}
+#titleholder {
+	background-color: transparent;
+	background-image: url(../images/header_plane.png);
+	background-repeat: no-repeat;
+	height: 535px;
+	width: 268px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	padding-top: 77px;
+}
+#logo {
+	height: 80px;
+	width: 236px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	background-color: transparent;
+	margin-bottom: 70px;
+}
+#menubar {
+	position: relative;
+	height: 240px;
+	width: 268px;
+	background-color: transparent;
+}
+#titleholder ul {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	position: relative;
+	display: block;
+	width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#titleholder ul li {
+	display: block;
+}
+#titleholder ul li a {
+	color: #82746F;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #2E2C2C;
+}
+
+#titleholder  a:hover{
+	color: #C1B6AF;
+	cursor:pointer;
+	cursor:hand;
+}
+
+
+#originalcontent {
+	float: right;
+	height: 721px;
+	width: 662px;
+	position: relative;
+	background-color: transparent;
+}
+
+
+
+.fixer {
+	clear: both;
+}
+
+#removableline {
+	position: relative;
+	height: 97px;
+	width: 100%;
+	background-color: transparent;
+}
+#bg-pic-holder {
+	background-color: transparent;
+	height: 97px;
+	width: 875px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+
+#bg-pic-movable {
+	position: absolute;
+	clip: rect(0px,auto,auto,0px);
+	height: 97px;
+	width: 875px;
+	background-color: transparent;
+}
+.btn-pic-boxes {
+	float: left;
+	height: 75px;
+	width: 115px;
+	margin-left: 10px;
+	position: relative;
+}
+.btn-pic-boxes a img {
+	border: 5px solid #393330;
+}
+.btn-pic-boxes a img:hover {
+	border: 5px solid #fff;
+	cursor:pointer;
+	cursor:hand;
+}
+
+
+#footer {
+	background-color: transparent;
+	position: relative;
+	height: 57px;
+	width: 100%;
+	background-image: url(../images/footer_plane.png);
+	background-repeat: repeat-x;
+}
